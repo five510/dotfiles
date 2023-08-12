@@ -31,3 +31,4 @@ cask "chromedriver"
 cask "docker"
 
 cask "iterm2"
+cask "hyperswitch"
