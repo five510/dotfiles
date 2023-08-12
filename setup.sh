@@ -6,7 +6,7 @@
 # pull mitamae
 arch=$(uname -m)
 
-sudo mkdir /usr/local/bin
+sudo mkdir -p /usr/local/bin
 
 if [ $arch = "arm64" ] ; then
     sudo curl -fsSLo /usr/local/bin/mitamae https://github.com/itamae-kitchen/mitamae/releases/latest/download/mitamae-aarch64-darwin
