@@ -21,4 +21,7 @@ if [ $arch = "arm64" ] ; then
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 fi
 
-/usr/local/bin/mitamae local -y nodes/arm64.yml entry.rb
+# execute mitamae
+git clone git@github.com:five510/dotfiles.git /tmp/
+mitame_root_dir=/tmp/dotfiles
+/usr/local/bin/mitamae local -y "$mitame_root_dir/nodes/arm64.yml" "$mitame_root_dir/entry.rb"
