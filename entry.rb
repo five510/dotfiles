@@ -6,4 +6,4 @@ end
 
 node.reverse_merge!(user: ENV['SUDO_USER'] || ENV['USER'])
 
-node[:cookbooks].each { |c| include_cookbook c }
+node[:cookbooks].each { |c| include_recipe c }
