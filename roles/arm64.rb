@@ -31,4 +31,4 @@ cask "chromedriver"
 cask "docker"
 
 cask "iterm2"
-cask "hyperswitch"
+cask "alt-tab"
