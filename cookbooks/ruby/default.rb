@@ -8,3 +8,10 @@ execute 'install latest ruby' do
     rbenv global $(rbenv install -L | grep -v - | tail -1)
     SCRIPT
 end
+
+execute 'install gems' do
+    command <<~SCRIPT
+    gem update bundler
+    gem install foreman
+    SCRIPT    
+end
