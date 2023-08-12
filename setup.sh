@@ -24,5 +24,5 @@ fi
 # execute mitamae
 mitame_root_dir=/tmp/dotfiles
 rm -rf $mitame_root_dir
-git clone git@github.com:five510/dotfiles.git /tmp/dotfiles
+git clone git@github.com:five510/dotfiles.git $mitame_root_dir
 /usr/local/bin/mitamae local -y "$mitame_root_dir/nodes/arm64.yml" "$mitame_root_dir/entry.rb"
