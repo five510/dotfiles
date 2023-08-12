@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -eu
-
 # install homebrew (including Xcode Command Line Tools)
 if [ -e /opt/homebrew/bin ] ; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
