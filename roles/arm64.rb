@@ -21,5 +21,11 @@ execute 'setup td-agent' do
   command "launchctl load /Library/LaunchDaemons/td-agent.plist"
 end
 
+package "yarn"
 package "imagemagick@6"
 package "ghostscript"
+
+package "terraform"
+package "awscli"
+cask "chromedriver"
+cask "docker"
