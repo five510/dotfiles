@@ -24,6 +24,7 @@ end
 package "yarn"
 package "imagemagick@6"
 package "ghostscript"
+package "shared-mime-info"
 
 package "terraform"
 package "awscli"
