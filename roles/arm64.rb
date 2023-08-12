@@ -7,6 +7,8 @@ include_recipe "../cookbooks/vscode"
 
 package "mysql@5.7"
 execute 'setup mysql' do
+  not_if "mysql -v"
+
   command "brew services start mysql@5.7"
   command 'which mysql || echo export PATH="/usr/local/opt/mysql@5.7/bin:$PATH" >> ~/.zprofile'
 end
