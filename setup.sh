@@ -2,6 +2,7 @@
 
 # install homebrew (including Xcode Command Line Tools)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # pull mitamae
 arch=$(uname -m)
