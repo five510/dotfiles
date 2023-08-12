@@ -10,10 +10,10 @@ execute 'install latest ruby' do
 end
 
 execute 'install gems' do
-    user 'root'
+    user "root"
 
     command <<~SCRIPT
     gem update bundler
     gem install foreman
-    SCRIPT    
+    SCRIPT
 end
