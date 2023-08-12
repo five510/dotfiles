@@ -22,6 +22,7 @@ if [ $arch = "arm64" ] ; then
 fi
 
 # execute mitamae
-git clone git@github.com:five510/dotfiles.git /tmp/
 mitame_root_dir=/tmp/dotfiles
+rm -rf $mitame_root_dir
+git clone git@github.com:five510/dotfiles.git /tmp/dotfiles
 /usr/local/bin/mitamae local -y "$mitame_root_dir/nodes/arm64.yml" "$mitame_root_dir/entry.rb"
