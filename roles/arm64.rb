@@ -32,3 +32,5 @@ cask "docker"
 
 cask "iterm2"
 cask "alt-tab"
+cask "insomnia"
+cask "clipy"
