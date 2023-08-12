@@ -1,9 +1,9 @@
 node.validate! do
-{
-    cookbooks: array_of(string)
-}
+  {
+      cookbooks: array_of(string)
+  }
 end
 
 node.reverse_merge!(user: ENV['SUDO_USER'] || ENV['USER'])
 
-node[:cookbooks].each { |c| include_recipe c }
+include_recipe "../cookbooks/ruby"
