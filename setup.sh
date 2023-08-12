@@ -1,8 +1,11 @@
 #!/bin/bash
 
 # install homebrew (including Xcode Command Line Tools)
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -e /opt/homebrew/bin ] ; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zprofile
+fi
 
 # pull mitamae
 arch=$(uname -m)
