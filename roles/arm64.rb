@@ -29,3 +29,5 @@ package "terraform"
 package "awscli"
 cask "chromedriver"
 cask "docker"
+
+cask "iterm2"
