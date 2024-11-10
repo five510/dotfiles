@@ -5,12 +5,12 @@ include_recipe "../cookbooks/ruby"
 include_recipe "../cookbooks/nodejs"
 include_recipe "../cookbooks/vscode"
 
-package "mysql@5.7"
+package "mysql@8.0"
 execute 'setup mysql' do
   not_if "mysql -v"
 
-  command "brew services start mysql@5.7"
-  command 'which mysql || echo export PATH="/usr/local/opt/mysql@5.7/bin:$PATH" >> ~/.zprofile'
+  command "brew services start mysql@8.0"
+  command 'which mysql || echo export PATH="/usr/local/opt/mysql@8.0/bin:$PATH" >> ~/.zprofile'
 end
 
 package "redis"
